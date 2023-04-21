@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if argument was passed
+if [ -z "$1" ]; then
+  echo "Error: no directory name provided"
+  exit 1
+fi
+
+# Create directory
+mkdir "$1"
+echo "Directory $1 created"
